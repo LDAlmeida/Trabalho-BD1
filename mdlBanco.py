@@ -30,7 +30,8 @@ class Conexao(object):
         return pk+1
     def fechar(self):
         self._db.close()
+    
 
-o = Conexao('ec2-34-226-172-180.compute-1.amazonaws.com','postgres','postgres','postgres')
-teste = o.consultar('select * from public.professor')
+bd = Conexao('ec2-34-226-172-180.compute-1.amazonaws.com','postgres','postgres','postgres')
+teste = bd.consultar('select * from public.professor')
 print (teste)
