@@ -32,6 +32,6 @@ class Conexao(object):
         self._db.close()
     
 
-bd = Conexao('ec2-34-226-172-180.compute-1.amazonaws.com','postgres','postgres','postgres')
+bd = Conexao('ec2-34-226-76-49.compute-1.amazonaws.com','postgres','postgres','postgres')
 teste = bd.consultar('select * from public.professor')
 print (teste)
