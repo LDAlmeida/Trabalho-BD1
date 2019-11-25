@@ -33,5 +33,6 @@ class Conexao(object):
     
 
 bd = Conexao('educatorrdb.ccqy8084hset.sa-east-1.rds.amazonaws.com','postgres','postgres','postgres')
-teste = bd.consultar('select * from public.aluno')
+teste = bd.consultar('select * from public.professor')
 print (teste)
+bd.fechar()
