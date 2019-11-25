@@ -2,7 +2,7 @@ import psycopg2
 
 
 class Conexao(object):
-    _db=None    
+    _db=None
     def __init__(self, mhost, db, usr, pwd):
         self._db = psycopg2.connect(host=mhost, database=db, user=usr,  password=pwd)
     def manipular(self, sql):
@@ -30,8 +30,7 @@ class Conexao(object):
         return pk+1
     def fechar(self):
         self._db.close()
-    
 
-bd = Conexao('educatorrdb.ccqy8084hset.sa-east-1.rds.amazonaws.com','postgres','postgres','postgres')
-teste = bd.consultar('select * from public.aluno')
-print (teste)
+o = Conexao('educatorrdb.ccqy8084hset.sa-east-1.rds.amazonaws.com','postgres','postgres','postgres')
+teste = o.consultar('select * from professor')
+print(teste)
