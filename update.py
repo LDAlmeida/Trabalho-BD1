@@ -9,7 +9,6 @@ def inserir(tupla, table):
         print(teste)
 
 def deletar(tupla, table):
-    
     print(tupla)
 
 def editar(tupla, table):
@@ -18,3 +17,4 @@ def editar(tupla, table):
 
 
 # INSERT INTO professor VALUES ('777', 'Samuel', 1);
+# DELETE FROM professor WHERE cpf = 333;
