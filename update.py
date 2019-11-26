@@ -5,7 +5,7 @@ bd = Conexao('educatorrdb.ccqy8084hset.sa-east-1.rds.amazonaws.com','postgres','
     
 def inserir(tupla, table):
     if table == 1:
-        teste = bd.manipular("INSERT INTO professor VALUES ('777', 'Samuel', '1');")
+        teste = bd.manipular("INSERT INTO professor VALUES ('" + tupla[0] + "', '" + tupla[1] + "', '" + tupla[2] + "');")
         print(teste)
 
 def deletar(tupla, table):

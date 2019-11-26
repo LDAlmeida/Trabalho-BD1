@@ -3,10 +3,10 @@ import tabelas
 
 tupla = []
 table = int(input("Tabela que será alterada: "))
+print("\n### MODO DE ALTERAÇÃO ###\n\n")
+opcao = int(input("1 INSERIR\n2 DELETAR\n3 EDITAR\n\n"))
 
 if table == 1:
-    print("\n### MODO DE ALTERAÇÃO ###\n\n")
-    opcao = int(input("1 INSERIR\n2 DELETAR\n3 EDITAR\n\n"))
     if opcao == 1:
         tupla = tabelas.departamento()
         update.inserir(tupla, table)
@@ -20,8 +20,6 @@ if table == 1:
         print("Opção inválida!")
 
 elif table == 2:
-    print("\n### MODO DE ALTERAÇÃO ###\n")
-    opcao = int(input("1 INSERIR\n2 DELETAR\n3 EDITAR\n\n"))
     if opcao == 1:
         tupla = tabelas.professor()
         update.inserir(tupla, table)
@@ -35,8 +33,6 @@ elif table == 2:
         print("Opção inválida!")
 
 elif table == 3:
-    print("\n### MODO DE ALTERAÇÃO ###\n\n")
-    opcao = int(input("1 INSERIR\n2 DELETAR\n3 EDITAR\n\n"))
     if opcao == 1:
         tupla = tabelas.aluno()
         update.inserir(tupla, table)
@@ -50,8 +46,6 @@ elif table == 3:
         print("Opção inválida!")
 
 elif table == 4:
-    print("\n### MODO DE ALTERAÇÃO ###\n\n")
-    opcao = int(input("1 INSERIR\n2 DELETAR\n3 EDITAR\n\n"))
     if opcao == 1:
         tupla = tabelas.disciplina()
         update.inserir(tupla, table)
@@ -65,8 +59,6 @@ elif table == 4:
         print("Opção inválida!")
 
 elif table == 5:
-    print("\n### MODO DE ALTERAÇÃO ###\n\n")
-    opcao = int(input("1 INSERIR\n2 DELETAR\n3 EDITAR\n\n"))
     if opcao == 1:
         tupla = tabelas.curso()
         update.inserir(tupla, table)
