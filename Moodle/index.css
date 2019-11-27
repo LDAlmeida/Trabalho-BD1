@@ -36,6 +36,9 @@ body{
 	color: white;
 	text-transform: uppercase;
 	font-weight: 500;
+	position: relative;
+	left: 35%;
+	top: -10%;
 }
 
 .box input[type="text"],.box1 input[type="text"]{
@@ -95,6 +98,28 @@ body{
 
 
 	}
+
+.box2 input[type="button"]{
+		
+	border: 0;
+	border-color: #b84040;
+	background: #b84040;
+	display: block;
+	left: 50%;
+	text-align: center;
+	border: 2px solid ;
+	padding: 14px 10px;
+	width: 200px;
+	outline : none;
+	color :rgb(0, 0, 0);
+	border-radius: 24px;
+	transition: 2s;
+	border-color:#7c2525 ;
+	margin-bottom: 10px;
+	cursor: pointer;
+	
+
+}
 	.box1 input[type="button"],.mensagem input[type = "button"]{
 		
 		border: 0;
@@ -139,7 +164,7 @@ body{
 	.box1 input[type="button"]:focus{
 		transition: 0.5s;
 		width: 210px;
-		background: #c24cc2;
+		background: #e78b8b;
 		border-color:#000000 ;
 	
 	

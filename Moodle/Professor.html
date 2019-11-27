@@ -8,14 +8,20 @@
 
 </head>
 <body>
-	<div class="wrapper" action ="index.html">
+	<div class="box1" action ="index.html">
+		<h1>Adicionar Professor</h1>
 		<div class="contato">
-			<div class="campos">
-				<input type="text" class =" input" placeholder="Nome Do Professor">
-
-                <input type="text" class =" input" placeholder="CPF">
-                <input type="text" class =" input" placeholder="Departamento">				
-			</div>
+			
+				<div class="campos" action="process.php" method ="post">
+						<input type="text" class =" input"  name="nomep" data-name="nomep" placeholder="Nome Do professor" id="nomep" required="">
+						<input type="text" class =" input"  name="cpfp" data-name="cpfp" placeholder="CPF" id="cpfp" required="">
+						<input type="text" class =" input"  name="depp" data-name="depp" placeholder="Departamento" id="depp" required="">
+					<input type="text" class =" input" placeholder="Codigo da materia">		
+				
+							<input type ="button" onclick="window.location='index.html';" value="Adicionar">
+								
+				</div>
+				
 			
 		</div>
 	</div>
