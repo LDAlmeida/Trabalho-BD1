@@ -2,21 +2,26 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="index.css">
  	<meta charset="utf-8">
-	<title>Adicionar Curso</title>
+	<title>Adicionar Aluno</title>
 
 
 
 </head>
 <body>
 	<div class="box1" action ="index.html">
-		<h1>Adicionar Curso</h1>
+		<h1>Adicionar Aluno</h1>
 		<div class="contato">
 			
-				<input type="text" class =" input" placeholder="Nome Do Curso">
-
-                <input type="text" class =" input" placeholder="Codigo">
-                <input type="text" class =" input" placeholder="Departamento">				
-				<input type ="button" onclick="window.location='index.html';" value="Adicionar">
+				<div class="campos" action="process.php" method ="post">
+						<input type="text" class =" input"  name="nomec" data-name="nomec" placeholder="Nome Do Curso" id="nomec" required="">
+						<input type="text" class =" input"  name="codc" data-name="codc" placeholder="Codigo" id="codc" required="">
+						<input type="text" class =" input"  name="depc" data-name="depc" placeholder="Departamento" id="depc" required="">
+						
+				
+							<input type ="button" onclick="window.location='index.html';" value="Adicionar">
+								
+				</div>
+				
 			
 		</div>
 	</div>
