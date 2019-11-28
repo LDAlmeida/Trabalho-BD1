@@ -26,11 +26,11 @@ def deletar(tupla, table):
     elif table == 2:
         delete = bd.manipular("DELETE FROM professor WHERE cpf = '" + str(tupla[0]) + "'")
     elif table == 3:
-        delete = bd.manipular("DELETE FROM aluno WHERE código = '" + str(tupla[0]) + "'")
+        delete = bd.manipular("DELETE FROM aluno WHERE matrícula = '" + str(tupla[0]) + "'")
     elif table == 4:
         delete = bd.manipular("DELETE FROM disciplina WHERE cod_disciplina = '" + str(tupla[0]) + "'")
     elif table == 5:
-        delete = bd.manipular("DELETE FROM curso WHERE matrícula = '" + str(tupla[0]) + "'")
+        delete = bd.manipular("DELETE FROM curso WHERE código = '" + str(tupla[0]) + "'")
 
 def atualizar(tupla, table):
     if table == 1:
@@ -38,16 +38,29 @@ def atualizar(tupla, table):
         "', gcpf = '" + str(tupla[2]) + "' WHERE código = '" + str(tupla[0]) + "'")
     elif table == 2:
         update = bd.manipular("UPDATE professor SET nome = '" +  str(tupla[1]) + 
-        "', nome = '" + str(tupla[2]) + "' WHERE cpf = '" + str(tupla[0]) + "'")
+        "', dnúmero = '" + str(tupla[2]) + "' WHERE cpf = '" + str(tupla[0]) + "'")
     if table == 3:
         update = bd.manipular("UPDATE aluno SET nome = '" +  str(tupla[1]) + 
-        "', gcpf = '" + str(tupla[2]) + "' WHERE matrícula = '" + str(tupla[0]) + "'")
-    if table == 1:
+        "', cod_curso = '" + str(tupla[2]) + "' WHERE matrícula = '" + str(tupla[0]) + "'")
+    if table == 4:
         update = bd.manipular("UPDATE disciplina SET nome = '" +  str(tupla[1]) + 
-        "', gcpf = '" + str(tupla[2]) + "' WHERE cod_disciplina = '" + str(tupla[0]) + "'")
-    if table == 1:
+        "', dnr = '" + str(tupla[2]) + "' WHERE cod_disciplina = '" + str(tupla[0]) + "'")
+    if table == 5:
         update = bd.manipular("UPDATE curso SET nome = '" +  str(tupla[1]) + 
         "', gcpf = '" + str(tupla[2]) + "' WHERE código = '" + str(tupla[0]) + "'")
+
+def selecionar(tupla, table):
+    if table == 1:
+        select = bd.manipular("SELECT * FROM departamento")
+    elif table == 2:
+        select = bd.manipular("SELECT * FROM professor")
+    elif table == 3:
+        select = bd.manipular("SELECT * FROM aluno")
+    elif table == 4:
+        select = bd.manipular("SELECT * FROM disciplina")
+    elif table == 5:
+        select = bd.manipular("SELECT * FROM curso")
+
 
 
 # INSERT INTO professor VALUES ('777', 'Samuel', 1);
