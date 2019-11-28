@@ -1,15 +1,6 @@
 <?php
 include_once("conexao.php");
 
-
-function departamento(){
-    $codigo = filter_input(INPUT_POST, 'codigo',FILTER_SANITIZE_STRING);
-    $nome = filter_input(INPUT_POST, 'nome',FILTER_SANITIZE_STRING);
-    $cpfp = filter_input(INPUT_POST, 'cpfp',FILTER_SANITIZE_STRING);
-
-    $saida = "DELETE FROM departamento WHERE codigo = $codigo";
-}
-
 function professor(){
     $cpfp = filter_input(INPUT_POST, 'cpfp',FILTER_SANITIZE_STRING);
     $nome = filter_input(INPUT_POST, 'nomep',FILTER_SANITIZE_STRING);
@@ -35,12 +26,3 @@ function disciplina(){
     $saida ="DELETE FROM professor WHERE cpfp = $codigo";
 }
 
-function professor(){
-    $cpfp = filter_input(INPUT_POST, 'cpfp',FILTER_SANITIZE_STRING);
-    $nome = filter_input(INPUT_POST, 'nomep',FILTER_SANITIZE_STRING);
-    $depp = filter_input(INPUT_POST, 'depp',FILTER_SANITIZE_STRING);
-
-    $saida ="DELETE FROM professor WHERE cpfp = $codigo";
-}
-
- ?>
