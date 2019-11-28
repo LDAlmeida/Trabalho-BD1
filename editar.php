@@ -1,20 +1,16 @@
 <?php
 
-# INSERT INTO professor VALUES ('777', 'Samuel', 1);
-# DELETE FROM professor WHERE cpf = 333;
-# UPDATE professor SET nome = Bruno WHERE cpf = 333
-# SELECT * FROM professor
 
-if(isset($_POST["professor"])){
-       
-    professor();
-}
-elseif(isset($_POST["aluno"])) {
-    aluno(); 
-}
-elseif(isset($_POST["disciplina"])) {
-    disciplina(); 
-}
+    if(isset($_POST["professor"])){
+        
+        professor();
+    }
+    elseif(isset($_POST["aluno"])) {
+        aluno(); 
+    }
+    elseif(isset($_POST["disciplina"])) {
+        disciplina(); 
+    }
 
 function professor(){
     include_once("conexao.php");
