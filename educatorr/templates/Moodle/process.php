@@ -8,6 +8,7 @@ $depp = filter_input(INPUT_POST, 'depp',FILTER_SANITIZE_STRING);
 
 $saida ="INSERT INTO professor(nomep,cpfp,depp) VALUES ($nomep,$cpfp,$depp)";
 }
+
 function aluno{
     $nomea = filter_input(INPUT_POST, 'nomea',FILTER_SANITIZE_STRING);
     $matricula = filter_input(INPUT_POST, 'matricula',FILTER_SANITIZE_EMAIL);
