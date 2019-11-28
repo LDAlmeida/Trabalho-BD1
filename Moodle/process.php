@@ -6,7 +6,7 @@ function professor{
     $cpfp = filter_input(INPUT_POST, 'nomep',FILTER_SANITIZE_STRING);
     $depp = filter_input(INPUT_POST, 'depp',FILTER_SANITIZE_STRING);
 
-$saida ="INSERT INTO professor(cpfp,nomep,depp) VALUES ($cpf,$nome,$dnúmero)";
+    $saida ="INSERT INTO professor(cpfp,nomep,depp) VALUES ($cpf,$nome,$dnúmero)";
 }
 
 function departamento{
@@ -14,7 +14,7 @@ function departamento{
     $nome = filter_input(INPUT_POST, 'nome',FILTER_SANITIZE_STRING);
     $dnr = filter_input(INPUT_POST, 'dnr',FILTER_SANITIZE_STRING);
 
-    $saida ="INSERT INTO professor(código,nome,dnr) VALUES ($codigo,$nome,$dnr)";
+    $saida ="INSERT INTO departamento(código,nome,dnr) VALUES ($codigo,$nome,$dnr)";
 }
 
 function aluno{
@@ -40,4 +40,6 @@ function curso{
 
     $saida ="INSERT INTO curso(código,nome,dnr) VALUES ($codigo,$nome,$dnr)";
 }
+
+function
  ?>
