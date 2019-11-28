@@ -36,7 +36,6 @@ function departamento(){
 }
 
 function aluno(){
-    echo 'ola';
     include_once("conexao.php");
     $matricula = filter_input(INPUT_POST, 'matricula',FILTER_SANITIZE_STRING);
     $nome = filter_input(INPUT_POST, 'nomea',FILTER_SANITIZE_STRING);

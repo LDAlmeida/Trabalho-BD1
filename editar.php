@@ -31,11 +31,13 @@ function aluno(){
     $saida ="UPDATE aluno SET nome = $nome, cod_curso = $cod_curso, cod_disciplina =  $cod_disciplina WHERE matricula = $matricula";
 }
 
-function professor(){
+function disciplina(){
     include_once("conexao.php");
-    $cpfp = filter_input(INPUT_POST, 'cpfp',FILTER_SANITIZE_STRING);
-    $nomep = filter_input(INPUT_POST, 'nomep',FILTER_SANITIZE_STRING);
-    $depp = filter_input(INPUT_POST, 'depp',FILTER_SANITIZE_STRING);
+    $cod_disciplina = filter_input(INPUT_POST, 'cod_disciplina',FILTER_SANITIZE_STRING);
+    $nome = filter_input(INPUT_POST, 'nome',FILTER_SANITIZE_STRING);
+    $dnr = filter_input(INPUT_POST, 'dnr',FILTER_SANITIZE_STRING);
 
-    $saida ="UPDATE professor SET nome = $nome, dnúmero = $depp WHERE cpf = $cpfp";
+    $saida ="UPDATE disciplina SET nome = $nome, dnr = $dnr WHERE cod_disciplina = $cod_disciplina";
 }
+
+?>
