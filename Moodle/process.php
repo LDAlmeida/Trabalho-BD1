@@ -6,7 +6,7 @@ $nomep = filter_input(INPUT_POST, 'nomep',FILTER_SANITIZE_STRING);
 $cpfp = filter_input(INPUT_POST, 'cpfp',FILTER_SANITIZE_EMAIL);
 $depp = filter_input(INPUT_POST, 'depp',FILTER_SANITIZE_STRING);
 
-$saida ="INSERT INTO BD(nomep,cpfp,depp) VALUES ($nomep,$cpfp,$depp)";
+$saida ="INSERT INTO professor(nomep,cpfp,depp) VALUES ($nomep,$cpfp,$depp)";
 }
 function aluno{
     $nomea = filter_input(INPUT_POST, 'nomea',FILTER_SANITIZE_STRING);
@@ -24,7 +24,7 @@ function disciplina{
     $resultado = mysqli_query($conn, $saida);
         }
 
-function disciplina{
+function curso{
     $nomec = filter_input(INPUT_POST, 'nomec',FILTER_SANITIZE_STRING);
     $codc = filter_input(INPUT_POST, 'codc',FILTER_SANITIZE_EMAIL);
     $depc = filter_input(INPUT_POST, 'depc',FILTER_SANITIZE_STRING);
