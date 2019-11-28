@@ -15,7 +15,7 @@ if table == 1:
         update.deletar(tupla, table)
     elif opcao == 3:
         tupla = tabelas.departamento()
-        update.editar(tupla, table)
+        update.atualizar(tupla, table)
     else:
         print("Opção inválida!")
 
@@ -28,7 +28,7 @@ elif table == 2:
         update.deletar(tupla, table)
     elif opcao == 3:
         tupla = tabelas.professor()
-        update.editar(tupla, table)
+        update.atualizar(tupla, table)
     else:
         print("Opção inválida!")
 
@@ -41,7 +41,7 @@ elif table == 3:
         update.deletar(tupla, table)
     elif opcao == 3:
         tupla = tabelas.aluno()
-        update.editar(tupla, table)
+        update.atualizar(tupla, table)
     else:
         print("Opção inválida!")
 
@@ -54,7 +54,7 @@ elif table == 4:
         update.deletar(tupla, table)
     elif opcao == 3:
         tupla = tabelas.disciplina()
-        update.editar(tupla, table)
+        update.atualizar(tupla, table)
     else:
         print("Opção inválida!")
 
@@ -67,7 +67,7 @@ elif table == 5:
         update.deletar(tupla, table)
     elif opcao == 3:
         tupla = tabelas.curso()
-        update.editar(tupla, table)
+        update.atualizar(tupla, table)
     else:
         print("Opção inválida!")
 
