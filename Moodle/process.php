@@ -41,5 +41,26 @@ function curso(){
     $saida ="INSERT INTO curso(código,nome,dnr) VALUES ($codigo,$nome,$dnr)";
 }
 
+function selectAluno() {
+    include_once("conexao.php");
+
+    $saida ="SELECT * FROM public.aluno";
+    $resultado = pg_query($conn, $saida);
+}
+
+function selectProfessor() {
+    include_once("conexao.php");
+
+    $saida ="SELECT * FROM public.professor";
+    $resultado = pg_query($conn, $saida);
+}
+
+function selectDisciplina() {
+    include_once("conexao.php");
+
+    $saida ="SELECT * FROM public.disciplina";
+    $resultado = pg_query($conn, $saida);
+}
+
 function
  ?>
