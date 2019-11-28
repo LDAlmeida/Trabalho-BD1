@@ -12,14 +12,16 @@ body{
 	top: 30%;
 	
 	text-align: center;
-
+	
 	
 }
 .box1,.box,.box1 li [type="a"]{
 	margin: 30% auto;
-	width: 100%;
+	width: 70%;
+	height: 80%;
 	position: absolute;
 	left:50%;
+	
 	transform: translate(-50%,-50%);
 	background: #7c2525;
 	
@@ -37,8 +39,8 @@ body{
 	text-transform: uppercase;
 	font-weight: 500;
 	position: relative;
-	left: 35%;
-	top: -10%;
+	left: 30%;
+	
 }
 
 .box input[type="text"],.box1 input[type="text"]{
@@ -77,8 +79,8 @@ body{
 	
 	text-align: center;
 	border: 2px solid ;
-	padding: 14px 10px;
-	width: 200px;
+	
+	padding: 14px 10px;	
 	outline : none;
 	color : rgb(255, 255, 255);
 	border-radius: 24px;
@@ -121,7 +123,9 @@ body{
 
 }
 	.box1 input[type="button"],.mensagem input[type = "button"]{
-		
+		position: relative;
+		left: 33%;
+		bottom: -25%;
 		border: 0;
 		border-color: #b84040;
 		background: #b84040;
@@ -141,16 +145,21 @@ body{
 		
 	
 	}
+	#login-box h1{
+		position: relative;
+		left: 44%;
+		align-content: center;
+	}
 	.materia input[type = "button"]{
-		border: 0;
+		
 		border-color: #b84040;
 		background: #b84040;
 		display: block;
-		
+		margin: 50px 40px ;
 		text-align: center;
 		border: 2px solid ;
 		padding: 14px 10px;
-		width: 100%;
+		width: 25%;
 		outline : none;
 		color :rgb(0, 0, 0);
 		border-radius: 24px;
@@ -221,6 +230,30 @@ body{
 			color: white;
 			border: transparent;
 		}
+
+.materia h1,.contato h1{
+	
+		color: white;
+		text-transform: uppercase;
+		font-weight: 500;
+		position: relative;
+		left: 20%;
+		top: 20%;
+		
+	
+
+}
+
+
+#menu option{
+	border-radius: 40px;
+	background:#eb7e7e;
+	text-transform: uppercase;
+	transition: 5s;
+
+}
+
+	
 #menu,#menu ul {
 	margin :0;
 	padding: 0;
@@ -228,8 +261,10 @@ body{
 
 }
 #menu {
-	width: 900px;
+	
+	width: 200px;
 	margin: 50px auto;
+	
 	
 	border-radius: 6px;
 	
@@ -250,7 +285,8 @@ body{
 	padding:12px 30px;
 	text-transform: uppercase;
 	text-decoration: none;
-	color:#fff;
+	color:rgb(83, 11, 11);
+	background: #444;
 	cursor: pointer;
 	position: Relative;
 	bottom: 20%;

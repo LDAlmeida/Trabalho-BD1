@@ -9,33 +9,39 @@
 
 </head>
 <body>
+    
+	<div class="box1" action ="index.html">
+		
+        <div id="login-box">
+			
+                <h1>Login</h1>
 
-<div class="box1" action ="login.php">
-    <div class="contato">
-        
-            <form class="campos" action="login.php" method ="post"name="login">
-                    <ul id="menu">
-                            <select id ="menu" name="menu">
-                            <option> <li><a >Tipo de usuario </a></option>
-                            <ul>
-                                
-                                <option> <li><a >Aluno</a></li></option>
-                                <option> <li><a>Professor</a></li></option>
-                                
-                            </ul>
-                            </li>  
-                        </select> 
-                            </ul>
-                    <input type="int" class =" input"  name="usuario" data-name="usuario" placeholder="Usuário" id="usuario" required="">
-                    <input type="text" class =" input"  name="senha" data-name="senha" placeholder="Senha" id="senha" required="">
-            
-                    <input type ="submit" name ="login" value="Logar">
+                <div class="materia">
+                        <ul id="menu">
+                        <select id ="menu">
+                        <option> <li><a >Tipo de usuario </a></option>
+                        <ul>
                             
-            </form>
+                           <option> <li><a >Aluno</a></li></option>
+                           <option> <li><a>Professor</a></li></option>
+                          
+                        </ul>
+                        </li>  
+                    </select> 
+                        </ul>
+                    <input type="text" class =" input"  name="cpfp" data-name="cpfp" placeholder="Digite a senha" id="cpfp" required="">
             
-        
-    </div>
-</div>
+                    <input type ="button" onclick="window.location='Professor.html';" value="professor">
+                    <input type ="button" onclick="window.location='Aluno.html';" value="aluno">
+                        
+
+            
+                </div>
+
+				
+			
+		</div>
+	</div>
 
 
 </body>

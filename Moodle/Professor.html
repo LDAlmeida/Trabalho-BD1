@@ -1,31 +1,27 @@
-	<!DOCTYPE html>
-	<head>
-		<link rel="stylesheet" type="text/css" href="static/index.css">
-		<meta charset="utf-8">
-		<title>Adicionar Professor</title>
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" href="static/index.css">
+ 	<meta charset="utf-8">
+	<title>Area do Professor</title>
 
-		
 
-	</head>
-	<body>
-		<div class="box1" action ="index.html">
-			<h1>Adicionar Professor</h1>
-			<div class="contato">
-				
-					<form class="campos" action="funcoes.php" method ="post"name="professor">
-							<input type="int" class =" input"  name="cpfp" data-name="cpfp" placeholder="CPF" id="cpfp" required="">
-							<input type="text" class =" input"  name="nomep" data-name="nomep" placeholder="Nome Do professor" id="nomep" required="">
-							
-							<input type="int" class =" input"  name="depp" data-name="depp" placeholder="Departamento" id="depp" required="">
-						
-					
-								<input type ="submit"action="submit"name ="professor" value="Adicionar">
-									
-					</form>
-					
-				
-			</div>
-		</div>
+</head>
+<body>
+	
+<nav>
 
+
+</nav>
+
+
+<form class ="box1"  method= "post">
+	<h1>Bem vindo Professor </h1>
+
+	<input type="button"  onclick="window.location='CriaDisciplina.html'"name= "adicionar" value ="Adicionar materia">
+	<input type="button" onclick="window.location='Addnota.html'"name ="addnota" value ="Adicionar notas">
+	<input type="button" onclick="window.location='CriaAluno.html'"name ="CriaAluno" value ="Adiconar aluno ">
+	<input type="button" onclick="window.location='VerMateria.html'"name ="vermateria" value ="Ver alunos matriculados">
+
+	</form>
 
 	</body>
