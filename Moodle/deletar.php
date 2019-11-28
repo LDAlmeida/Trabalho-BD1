@@ -23,6 +23,6 @@ function disciplina(){
     $nome = filter_input(INPUT_POST, 'nome',FILTER_SANITIZE_STRING);
     $depp = filter_input(INPUT_POST, 'depp',FILTER_SANITIZE_STRING);
 
-    $saida ="DELETE FROM professor WHERE cpfp = $codigo";
+    $saida ="DELETE FROM disciplina WHERE cod_disciplina = $codigo";
 }
 
