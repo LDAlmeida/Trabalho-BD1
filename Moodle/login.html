@@ -9,40 +9,33 @@
 
 </head>
 <body>
-    
-	<div class="box1" action ="login.html">
-		
-        <div id="login-box">
-			
-                <h1>Login</h1>
 
-                <form class="campos" action="login.php" method="POST">
-                        <ul id="menu">
-                        <select id ="menu" name="menu">
-                        <option> <li><a >Tipo de usuario </a></option>
-                        <ul>
-                            
-                           <option> <li><a >Aluno</a></li></option>
-                           <option> <li><a>Professor</a></li></option>
-                          
-                        </ul>
-                        </li>  
-                    </select> 
-                        </ul>
-                        <input type="text" class =" input"  name="usuario" data-name="usuario" placeholder="Digite o usuario" id="usuario" required="">
-                        <input type="text" class =" input"  name="senha" data-name="senha" placeholder="Digite a senha" id="senha" required="">
-                
-                    <input type ="submit" action="submit" onclick="logar()" value="logar">
-                   
-                        
-
+<div class="box1" action ="login.php">
+    <div class="contato">
+        
+            <form class="campos" action="login.php" method ="post"name="login">
+                    <ul id="menu">
+                            <select id ="menu" name="menu">
+                            <option> <li><a >Tipo de usuario </a></option>
+                            <ul>
+                                
+                                <option> <li><a >Aluno</a></li></option>
+                                <option> <li><a>Professor</a></li></option>
+                                
+                            </ul>
+                            </li>  
+                        </select> 
+                            </ul>
+                    <input type="int" class =" input"  name="usuario" data-name="usuario" placeholder="Usuário" id="usuario" required="">
+                    <input type="text" class =" input"  name="senha" data-name="senha" placeholder="Senha" id="senha" required="">
             
-                    </form>
-
-				
-			
-		</div>
-	</div>
+                    <input type ="submit" name ="login" value="Logar">
+                            
+            </form>
+            
+        
+    </div>
+</div>
 
 
 </body>
