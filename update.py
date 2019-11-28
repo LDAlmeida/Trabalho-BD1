@@ -5,6 +5,7 @@ bd = Conexao('educatorrdb.ccqy8084hset.sa-east-1.rds.amazonaws.com','postgres','
     
 def inserir(tupla, table):
     if table == 1:
+<<<<<<< Updated upstream
         insert = bd.manipular
         ("INSERT INTO departamento VALUES ('"+str(tupla[0])+"', '"+str(tupla[1])+"', '"+str(tupla[2])+"');")
     elif table == 2:
@@ -19,6 +20,12 @@ def inserir(tupla, table):
     elif table == 5:
         insert = bd.manipular
         ("INSERT INTO curso VALUES ('"+str(tupla[0])+"', '"+str(tupla[1])+"', '"+str(tupla[2])+"');")
+=======
+        teste = bd.manipular("INSERT INTO professor VALUES ('"+str(tupla[0])+"', '"+str(tupla[1])+"', '"+str(tupla[2])+"');")
+        print(teste)
+    elif table == 2:
+        teste = bd.manipular("INSERT ")
+>>>>>>> Stashed changes
 
 def deletar(tupla, table):
     if table == 1:
