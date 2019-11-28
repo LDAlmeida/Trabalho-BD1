@@ -10,15 +10,15 @@
 </head>
 <body>
     
-	<div class="box1" action ="index.html">
+	<div class="box1" action ="login.html">
 		
         <div id="login-box">
 			
                 <h1>Login</h1>
 
-                <div class="materia">
+                <form class="campos" action="login.php" method="POST">
                         <ul id="menu">
-                        <select id ="menu">
+                        <select id ="menu" name="menu">
                         <option> <li><a >Tipo de usuario </a></option>
                         <ul>
                             
@@ -29,14 +29,15 @@
                         </li>  
                     </select> 
                         </ul>
-                    <input type="text" class =" input"  name="cpfp" data-name="cpfp" placeholder="Digite a senha" id="cpfp" required="">
-            
-                    <input type ="button" onclick="window.location='Professor.html';" value="alterar">
+                        <input type="text" class =" input"  name="usuario" data-name="usuario" placeholder="Digite o usuario" id="usuario" required="">
+                        <input type="text" class =" input"  name="senha" data-name="senha" placeholder="Digite a senha" id="senha" required="">
+                
+                    <input type ="submit" action="submit" onclick="logar()" value="logar">
                    
                         
 
             
-                </div>
+                    </form>
 
 				
 			
