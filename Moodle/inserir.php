@@ -18,7 +18,7 @@
         curso(); 
      }
 
-function departamento{
+function departamento(){
     include_once("conexao.php");
     $codigo = filter_input(INPUT_POST, 'código',FILTER_SANITIZE_STRING);
     $nome = filter_input(INPUT_POST, 'nome',FILTER_SANITIZE_STRING);
@@ -28,7 +28,7 @@ function departamento{
     $resultado = pg_query($conn, $saida);
 }
 
-function aluno{
+function aluno(){
     include_once("conexao.php");
     $matricula = filter_input(INPUT_POST, 'matrícula',FILTER_SANITIZE_STRING);
     $nome = filter_input(INPUT_POST, 'nome',FILTER_SANITIZE_STRING);
@@ -38,7 +38,7 @@ function aluno{
     $resultado = pg_query($conn, $saida);
 }
 
-function disciplina{
+function disciplina(){
     include_once("conexao.php");
     $cod_disciplina = filter_input(INPUT_POST, 'cod_disciplina',FILTER_SANITIZE_STRING);
     $nome = filter_input(INPUT_POST, 'nome',FILTER_SANITIZE_STRING);
@@ -48,7 +48,7 @@ function disciplina{
     $resultado = pg_query($conn, $saida);
 }
 
-function curso{
+function curso(){
     include_once("conexao.php");
     $codigo = filter_input(INPUT_POST, 'código',FILTER_SANITIZE_STRING);
     $nome = filter_input(INPUT_POST, 'nome',FILTER_SANITIZE_STRING);
