@@ -12,16 +12,16 @@
 			<h1>Adicionar Professor</h1>
 			<div class="contato">
 				
-					<div class="campos" action="process.php" method ="post">
-							<input type="text" class =" input"  name="cpfp" data-name="cpfp" placeholder="CPF" id="cpfp" required="">
+					<form class="campos" action="process.php" method ="post">
+							<input type="int" class =" input"  name="cpfp" data-name="cpfp" placeholder="CPF" id="cpfp" required="">
 							<input type="text" class =" input"  name="nomep" data-name="nomep" placeholder="Nome Do professor" id="nomep" required="">
 							
-							<input type="text" class =" input"  name="depp" data-name="depp" placeholder="Departamento" id="depp" required="">
+							<input type="int" class =" input"  name="depp" data-name="depp" placeholder="Departamento" id="depp" required="">
 						
 					
-								<input type ="button" onclick="window.location='index.html';" value="Adicionar">
+								<input type ="submit"action="submit"onclick="professor()" value="Adicionar">
 									
-					</div>
+					</form>
 					
 				
 			</div>

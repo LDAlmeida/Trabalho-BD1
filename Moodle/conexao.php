@@ -4,8 +4,8 @@ $usuario = "postgres";
 $senha = "postgres";
 $dbname = "postgres";
 
-
-$conn = pg_connect($servidor,$usuario,$senha,$dbname);
+$conexao ="host=educatorrdb.ccqy8084hset.sa-east-1.rds.amazonaws.com port=5432 dbname=postgres user=postgres password=postgres"; 
+$conn =  pg_connect($conexao);
 
 
 ?>
