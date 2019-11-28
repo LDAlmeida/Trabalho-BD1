@@ -10,13 +10,13 @@
     }
     elseif(isset($_POST["aluno"])) {
         aluno(); 
-     }
-     elseif(isset($_POST["disciplina"])) {
+    }
+    elseif(isset($_POST["disciplina"])) {
         disciplina(); 
-     }
-     elseif(isset($_POST["curso"])) {
+    }
+    elseif(isset($_POST["curso"])) {
         curso(); 
-     }
+    }
 
 function departamento(){
     include_once("conexao.php");
@@ -57,7 +57,6 @@ function curso(){
     $saida ="INSERT INTO curso(código,nome,dnr) VALUES ($codigo,$nome,$dnr)";
     $resultado = pg_query($conn, $saida);
 }
-
 
 
 function professor (){
