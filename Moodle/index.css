@@ -242,7 +242,6 @@ body{
 	clear: both;
 }
 #menu li{
-	float: left;
 	box-shadow: 1px 0 0 #444;
 
 }
@@ -252,6 +251,9 @@ body{
 	text-transform: uppercase;
 	text-decoration: none;
 	color:#fff;
+	cursor: pointer;
+	position: Relative;
+	bottom: 20%;
 
 }
 #menu li:hover>a{
@@ -260,23 +262,31 @@ body{
 
 }
 #menu ul{
-	margin: 20px 0 0 0;
+	
 	opacity: 0;
 	visibility: hidden;
 	position: absolute;
-	top: 46px;
-	left: 29.2%;
+	right: 37%;
 	z-index: 1;
 	background: #262626;
 	border-radius:3px ;
 	transition: all .3s ease-in-out;
-	-webkit-transition: all .3s ease-in-out;
-	-moz-transition: all .3s ease-in-out;
-	-ms-transition: all .3s ease-in-out;
-	-o-transition: all .3s ease-in-out;
+
 }
 #menu li:hover>ul{
 	opacity: 1;
 	visibility: visible;
 	margin :0;
 }
+
+
+
+
+.campos [type="button"]:focus>.teste ul{
+	opacity: 1;
+	visibility: visible;
+	margin :0;
+}
+	
+
+
