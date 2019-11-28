@@ -200,6 +200,9 @@ body{
 		
 		
 		}
+		.campos input[type="checkbox"]{
+			visibility: hidden;
+		}
 		.campos input[type="text"]{
 			background: transparent;
 			color: white;
@@ -307,6 +310,7 @@ body{
 	background: #262626;
 
 }
+
 #menu ul{
 	
 	opacity: 0;

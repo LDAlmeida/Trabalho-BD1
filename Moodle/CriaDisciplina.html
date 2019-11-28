@@ -12,15 +12,17 @@
 		<h1>Adicionar Materia</h1>
 		<div class="contato">
 			
-				<div class="campos" action="process.php" method ="post">
+				<form class="campos" action="inserir.php" value="disciplina" method ="post">
+						<input type="checkbox" checked class =" input"  name="id" value ="4" data-name="nomea" placeholder="Nome Do aluno" id="nomea" required="">
+						
 						<input type="text" class =" input"  name="nomed" data-name="nomed" placeholder="Nome Da Disciplina" id="nomed" required="">
 						<input type="text" class =" input"  name="codigo" data-name="codigo" placeholder="Codigo" id="codigo" required="">
-						<input type="text" class =" input"  name="depd" data-name="depd" placeholder="Codigo do departamento" id="depd" required="">
+						<input type="text" class =" input"  name="dnr" data-name="dnr" placeholder="Codigo do departamento" id="dnr" required="">
 						
 				
-							<input type ="button" onclick="window.location='Professor.html';" value="Adicionar">
+							<input type ="submit"  value="disciplina">
 								
-				</div>
+				</form>
 				
 			
 		</div>

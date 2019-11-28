@@ -8,19 +8,21 @@
 
 </head>
 <body>
-	<div class="box1" action ="index.html">
+	<div class="box1">
 		<h1>Adicionar Professor</h1>
 		<div class="contato">
 			
-				<div class="campos" action="process.php function professor" method ="post">
+				<form class="campos" action="inserir.php"value="professor"  method ="post">
+						<input type="checkbox" checked class =" input"  name="id" value ="1" data-name="nomea" placeholder="Nome Do aluno" id="nomea" required="">
+
 						<input type="text" class =" input"  name="nomep" data-name="nomep" placeholder="Nome Do professor" id="nomep" required="">
 						<input type="text" class =" input"  name="cpfp" data-name="cpfp" placeholder="CPF" id="cpfp" required="">
 						<input type="text" class =" input"  name="depp" data-name="depp" placeholder="Departamento" id="depp" required="">
 					
 				
-							<input type ="button" onclick="window.location='index.html';" value="Adicionar">
+							<input type ="submit" value="professor" >
 								
-				</div>
+				</form>
 				
 			
 		</div>
